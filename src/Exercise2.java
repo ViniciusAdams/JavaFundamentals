@@ -4,6 +4,7 @@
         Set the existing bonus variable to 200.
         Use the same if condition (meaning if gameOver is true) you want to perform the same calculation, and print out the value of the finalScore variable.
 */
+//class about methods
 public class Exercise2<gameOver> {
     public static void main(String[] args) {
 
@@ -14,6 +15,28 @@ public class Exercise2<gameOver> {
 
         int finalScore = score;
 
+        calculatesScore(true,8, 1000 ,200);
+
+
+        //first method
+        // boolean NewgameOver = true;
+        // int Newscore = 10000;
+        //int NewlevelCompleted = 8;
+        //int Newbonus = 200;
+
+        // int NewfinalScore = score;
+
+        // if (gameOver) {
+        //     finalScore += (levelCompleted * bonus);
+        //  finalScore += 1000;
+        // System.out.println("Your final score was " + finalScore);
+
+        score = 10000;
+        levelCompleted = 8;
+        bonus = 200;
+
+        finalScore = score;
+
         if (gameOver) {
             finalScore += (levelCompleted * bonus);
             finalScore += 1000;
@@ -21,24 +44,10 @@ public class Exercise2<gameOver> {
         }
 
 
-    //first method
-       // boolean NewgameOver = true;
-       // int Newscore = 10000;
-        //int NewlevelCompleted = 8;
-        //int Newbonus = 200;
+    }
 
-       // int NewfinalScore = score;
-
-       // if (gameOver) {
-       //     finalScore += (levelCompleted * bonus);
-          //  finalScore += 1000;
-           // System.out.println("Your final score was " + finalScore);
-
-         score = 10000;
-         levelCompleted = 8;
-         bonus = 200;
-
-         finalScore = score;
+    public static void calculatesScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+        int finalScore = score;
 
         if (gameOver) {
             finalScore += (levelCompleted * bonus);
