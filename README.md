@@ -1,3 +1,6 @@
+This Project is the conclusion of the course Java Programming Masterclass updated to Java 17 in Udemy - when I finish I will post the certificate with the link to the repository on my personal website: www.viniciusadams.com
+
+
 Exercise 1--
 Your challenge is to create four new variables:
 A byte variable, set it to any valid byte number, it doesn't matter.
