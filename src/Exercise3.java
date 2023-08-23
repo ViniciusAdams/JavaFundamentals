@@ -42,14 +42,15 @@ public class Exercise3 {
 
 
     public static int calculateHighScorePosition(int score) {
+        int position =4;
         if (score >= 1000) {
-            return 1;
+             position =1;
         }else if (score >= 500){
-            return 2;
+            position =2;
         }else if (score >= 100 ) {
-            return 3;
+            position =3;
         }
-        return 4;
+        return position;
 
     }
 }
