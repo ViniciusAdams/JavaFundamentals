@@ -2,7 +2,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 // Import the LeapYear class without specifying a package
-import LeapYear;
 
 public class LeapYearTest {
 
