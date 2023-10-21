@@ -1,0 +1,54 @@
+We can easily understand about method of overloading by the below example:
+
+Suppose we have to write a method to find the square of an integer number. We can write this method as follows:
+
+public void intSquare ( int number )
+{
+ int square = number * number;
+ System.out.printIn("Method with Integer Argument Called:"+square);
+}
+Suppose we want to find the square of 10, then to find the square of 10, we can call this method as follows:
+
+ intSquare(5);
+
+Now, if we want to find the Square of a double type value, then we have to create another Square () method as follows:
+
+public void doubleSquare(double number)
+{
+ double square = number * number;
+ System.out.printIn("Method with double Argument Called:"+square);
+}
+Similarly, if we want to find the square of long type value, then we have to create another method as follows:
+
+public void longSquare(long number)
+{
+long square = number * number;
+System.out.printIn("Method with long Argument Called:"+square);
+}
+If we look carefully, to find the square of a number only, according to the data type of the number, we have to take three names as follows:
+
+intSquare()
+
+doubleSquare()
+
+longSquare()
+
+If it is possible that a programmer has to take only one name and the program itself decides which method to use for which type of value, then it will be easier for the programmer to get the same. There is no need to memorise the names of more than one method for type work. In Java, we can give the above three methods the same name.
+
+If we provide only the square () name instead of giving different names to the above three methods and write the rest of the description as follows, then Java’s Compiler does not generate any error.
+
+public void Square ( int number )
+{
+ int square = number * number;
+ System.out.printIn(“Method with Integer Argument Called:“+square);
+ }
+public void Square(double number)
+ {
+ double square = number * number;
+System.out.printIn(“Method with double Argument Called:“+square);
+}
+public void Square(long number)
+ {
+long square = number * number;
+System.out.printIn(“Method with long Argument Called:“+square);
+}
