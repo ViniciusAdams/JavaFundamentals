@@ -1,4 +1,6 @@
-public class ThreadOrdering {
+package ConcurrentDevelopment;
+
+class ThreadOrdering {
     private static final int NUM_THREADS = 10;
     private static int currentThread = 0;
 

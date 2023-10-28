@@ -13,7 +13,7 @@ class part1 extends Thread {
     }
 }
 
-public class ThreadExample {
+class ThreadExample {
     public static void main(String[] args) {
         part1 thread1 = new part1();
         part1 thread2 = new part1();
